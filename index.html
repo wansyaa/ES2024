@@ -17,7 +17,7 @@
         <input type="text" id="url" name="url" value="" required><br><br>
 
 		<label for="Action">Action:</label>
-        <input type="Action" id="url" name="Action" value="" required><br><br>
+        <input type="Action" id="Action" name="Action" required><br><br>
 
         <label for="Data">Data:</label><br>
         <textarea id="Data" name="Data" rows="10" cols="50" required></textarea><br><br>
@@ -37,21 +37,21 @@
             form.action = url;
             //form.target = '_blank'; // Open in a new tab
 
-            // Add JSON data as a hidden input
-            var inputData = document.createElement('inputData');
-            inputData.type = 'Data';
-            inputData.name = 'Data';
-            inputData.value = Data;
-            form.appendChild(inputData);
+            <!-- // Add JSON data as a hidden input -->
+            <!-- var inputData = document.createElement('inputData'); -->
+            <!-- inputData.type = 'Data'; -->
+            <!-- inputData.name = 'Data'; -->
+            <!-- inputData.value = Data; -->
+            <!-- form.appendChild(inputData); -->
 			
-			var inputAction = document.createElement('inputAction');
-            inputAction.type = 'Action';
-            inputAction.name = 'Action';
-            inputAction.value = Action;
-            form.appendChild(inputAction);
+			<!-- var inputAction = document.createElement('inputAction'); -->
+            <!-- inputAction.type = 'Action'; -->
+            <!-- inputAction.name = 'Action'; -->
+            <!-- inputAction.value = Action; -->
+            <!-- form.appendChild(inputAction); -->
 
             // Append the form to the body and submit it
-            document.body.appendChild(form);
+            <!-- document.body.appendChild(form); -->
             form.submit();
 
             // Remove the form after submission
